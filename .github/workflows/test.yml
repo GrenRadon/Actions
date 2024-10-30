@@ -9,10 +9,14 @@ jobs:
         steps: 
         - name: Hola Mundo
           run:  echo "Hola mundo"
+        - name: touch file
+          run: touch hola.txt
+        - name: Set text 
+          run: 
     
     other:
         runs-on: ubuntu-latest
 
         steps: 
         - name: LS
-          run:  ls -a
+          run:  ls -al
